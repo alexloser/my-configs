@@ -1,0 +1,28 @@
+[
+    { "keys": ["ctrl+["], "command": "exit_insert_mode"},
+
+    { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+    { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+    { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+    { "keys": ["ctrl+j"], "command": "insert", "args": {"characters": "\n"} },
+    { "keys": ["ctrl+i"], "command": "auto_complete" },
+
+    { "keys": ["ctrl+i"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["ctrl+d"], "command": "right_delete" },
+
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+    { "keys": ["f3"], "command": "goto_definition" },
+    { "keys": ["f4"], "command": "exec", "args": {"kill": true} },
+    { "keys": ["f5"], "command": "build" },
+
+    { "keys": ["alt+s"], "command": "save" }
+]
