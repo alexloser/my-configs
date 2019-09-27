@@ -14,13 +14,13 @@ sudo apt-get install vim-nox
 apt-get install python-software-properties -y; 
 add-apt-repository ppa:ubuntu-toolchain-r/test; 
 apt-get update; 
-apt-get install g++-5 -y; 
-apt-get install g++-5-multilib -y; 
-update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 20; 
+apt-get install g++-6 -y; 
+apt-get install g++-6-multilib -y; 
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 20; 
 update-alternatives --config g++; 
-# update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 20
+# update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 20
 # update-alternatives --config gcc 
-# apt-get install gfortran -y;
+# apt-get install gfortran-6 -y;
 # apt-get install libgfortran3 -y;
 
 ## devs
@@ -93,6 +93,8 @@ cd ../
 
 # Build openblas
 apt-get install libopenblas-dev -y;
+apt-get install liblapack-dev;
+apt-get install liblapacke-dev;
 # only for ubuntu 12.04:
 # cd the openblas dir /usr/lib/openblas-base/ and:
 # ln -sf ./libopenblas.a    /usr/lib/libopenblas.a 
