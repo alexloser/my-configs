@@ -10,7 +10,7 @@ sudo apt-get remove vim-tiny
 sudo apt-get install vim-common
 sudo apt-get install vim-nox
 
-## c++11
+## gcc-6
 apt-get install python-software-properties -y; 
 add-apt-repository ppa:ubuntu-toolchain-r/test; 
 apt-get update; 
@@ -18,10 +18,10 @@ apt-get install g++-6 -y;
 apt-get install g++-6-multilib -y; 
 update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 20; 
 update-alternatives --config g++; 
-# update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 20
-# update-alternatives --config gcc 
-# apt-get install gfortran-6 -y;
-# apt-get install libgfortran3 -y;
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 20
+update-alternatives --config gcc 
+apt-get install gfortran-6 -y;
+apt-get install libgfortran3 -y;
 
 ## devs
 apt-get install binutils -y;
@@ -39,28 +39,31 @@ apt-get install libicu-dev -y;
 apt-get install zlib1g-dev -y;
 apt-get install libbz2-dev -y;
 apt-get install liblzma-dev -y;
-apt-get install libicu-dev -y;
 # apt-get install libcurl4-gnutls-dev -y;
 # or
 # apt-get install libcurl4-openssl-dev -y;
 
+## libav
+apt-get install libavcodec-dev -y;
+apt-get install libavformat-dev -y;
+apt-get install libavfilter-dev -y;
+apt-get install libavresample-dev -y;
+apt-get install libswscale-dev -y;
+apt-get install ffmpeg -y;
+
 ## java
-# apt-get install openjdk-8-jre -y; \
-# apt-get install openjdk-8-jdk -y; 
+apt-get install openjdk-8-jre -y; \
+apt-get install openjdk-8-jdk -y; 
 
 ## boost
-echo "install boost 1.62"
-tar -xf boost_1_62_0.tar.bz2
-cd ./boost_1_62_0
+echo "install boost 1.68"
+tar -xf boost_1_68_0.tar.bz2
+cd ./boost_1_68_0
 ./bootstrap.sh
 ./b2 --build-type=minimal variant=release threading=multi \
 --with-system \
 --with-thread \
---with-regex \
 --with-filesystem \
---with-locale \
---with-test \
---with-graph \
 --with-serialization \
 --with-program_options
 cp -r ./boost/ /usr/local/include/
@@ -68,7 +71,7 @@ cp -r ./stage/lib/libboost_* /usr/local/lib/
 cd ../
 
 ## python3.6
-wget https://www.python.org/ftp/python/3.6.2/Python-3.6.8.tgz
+wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
 tar -xf Python-3.6.8.tgz
 cd ./Python-3.6.8
 ./configure --enable-optimizations
@@ -77,36 +80,21 @@ make install
 cd ../
 
 ## python libs
-# pip3.6 install aiomysql; \
-# pip3.6 install aioredis; \
-# pip3.6 install pymongo; \
-# pip3.6 install pycurl; \
-# pip3.6 install requests; \
-# pip3.6 install mako; \
-# pip3.6 install psutil; \
-# pip3.6 install beautifulsoup4; \
-# pip3.6 install numpy;
-# pip3.6 install scipy;
-# pip3.6 install scilit-learn;
-# pip3.6 install gensim;
-# pip3.6 install flask;
+pip3.6 install requests; \
+pip3.6 install mako; \
+pip3.6 install psutil;
 
 # Build openblas
 apt-get install libopenblas-dev -y;
 apt-get install liblapack-dev;
 apt-get install liblapacke-dev;
-# only for ubuntu 12.04:
-# cd the openblas dir /usr/lib/openblas-base/ and:
-# ln -sf ./libopenblas.a    /usr/lib/libopenblas.a 
-# ln -sf ./libopenblas.so   /usr/lib/libopenblas.so 
-# ln -sf ./libopenblas.so.1 /usr/lib/libbopenlas.so.1 
-# ldconfig
-
-## databases
 
 ldconfig
 
 set +v
 
 echo "All Finished!"
+
+
+
 
