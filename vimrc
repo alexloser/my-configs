@@ -37,7 +37,7 @@ set guioptions-=m
 set fileencoding=utf-8
 set encoding=utf-8
 set statusline=\ %F\ \ %m\ \ %y\ \ row:%l\ \ col:%v\ \ last:%L\ \ %P\ \ asc:%Bh\ \ fmt:%{&ff}
-set guifont=Courier 10 Pitch\ 11.5
+"set guifont=Courier 10 Pitch\ 11.5
 
 "Set Highlight Colors
 syntax clear
