@@ -44,11 +44,7 @@ apt-get install liblzma-dev -y;
 # apt-get install libcurl4-openssl-dev -y;
 
 ## libav
-apt-get install libavcodec-dev -y;
-apt-get install libavformat-dev -y;
-apt-get install libavfilter-dev -y;
-apt-get install libavresample-dev -y;
-apt-get install libswscale-dev -y;
+apt-get install libavcodec-dev libavformat-dev libavfilter-dev libavresample-dev libswscale-dev -y;
 apt-get install ffmpeg -y;
 
 ## java
