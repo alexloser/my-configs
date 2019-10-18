@@ -18,7 +18,7 @@ export OMP_NUM_THREADS=4
 export MKL_NUM_THREADS=4
 
 export LD_LIBRARY_PATH="./:../:./libs:../libs:/usr/lib/nvidia-384:$LD_LIBRARY_PATH"
-export LD_LIBRARY_PATH="/opt/intel/compilers_and_libraries_2019.4.243/linux/mkl/lib/intel64_lin:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/opt/intel/lib/intel64_lin:/opt/intel/mkl/lib/intel64_lin:$LD_LIBRARY_PATH"
 
 
 alias gpom='echo "git push origin master"; git push origin master'
