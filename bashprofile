@@ -12,8 +12,8 @@ export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 export JRE_HOME="${JAVA_HOME}/jre"
 export CLASSPATH=".:${JAVA_HOME}/lib:${JRE_HOME}/lib:${SPARK_HOME}/lib"
 
-export MKL_DIR="/opt/intel"
-export MKLROOT="${MKL_DIR}/mkl"
+export INTEL_DIR="/opt/intel"
+export MKLROOT="${INTEL_DIR}/mkl"
 export CUDA_TOOLKIT_ROOT_DIR="/usr/local/cuda"
 
 export GOROOT="/usr/local/go"
@@ -26,9 +26,8 @@ if [ -z $LD_LIBRARY_PATH ]; then
 fi
 export LD_LIBRARY_PATH="./libs:../libs:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="${CUDA_TOOLKIT_ROOT_DIR}/lib64:$LD_LIBRARY_PATH"
-export LD_LIBRARY_PATH="${MKLROOT}/lib/intel64_lin:${MKL_DIR}/lib/intel64_lin:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="${MKLROOT}/lib/intel64_lin:${INTEL_DIR}/lib/intel64_lin:$LD_LIBRARY_PATH"
 
 export OMP_NUM_THREADS=8
 export MKL_NUM_THREADS=8
-
 
