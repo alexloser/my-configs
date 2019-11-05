@@ -22,11 +22,11 @@ export GOPATH="$HOME/Go"
 export PATH="$PATH:${JAVA_HOME}/bin:${CUDA_TOOLKIT_ROOT_DIR}/bin:${GOROOT}/bin:${GOPATH}/bin"
 
 if [ -z $LD_LIBRARY_PATH ]; then
-    export LD_LIBRARY_PATH=""
+    export LD_LIBRARY_PATH=".:.."
 fi
-export LD_LIBRARY_PATH="./libs:../libs:$LD_LIBRARY_PATH"
-export LD_LIBRARY_PATH="${CUDA_TOOLKIT_ROOT_DIR}/lib64:$LD_LIBRARY_PATH"
-export LD_LIBRARY_PATH="${MKLROOT}/lib/intel64_lin:${INTEL_DIR}/lib/intel64_lin:$LD_LIBRARY_PATH"
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${MKLROOT}/lib/intel64:${INTEL_DIR}/lib/intel64"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${CUDA_TOOLKIT_ROOT_DIR}/lib64"
 
 export OMP_NUM_THREADS=8
 export MKL_NUM_THREADS=8
