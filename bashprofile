@@ -6,6 +6,8 @@ alias gcam='echo "git commit -a -m"; git commit -a -m '
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
+alias eclipse="/opt/eclipse/eclipse &"
+alias p3="python3m"
 
 
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
