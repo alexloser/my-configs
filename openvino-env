@@ -1,0 +1,16 @@
+# Set intel openvino tools path
+export PATH="$PATH:/opt/intel/openvino/deployment_tools/model_optimizer"
+# Set intel openvino libraries path
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/opencv/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/opencl"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/hddl/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/gna/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/mkltiny_lnx/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/tbb/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/openvx/lib"
+# Set intel openvino env path
+export INTEL_CVSDK_DIR="/opt/intel/openvino"
+export INTEL_OPENVINO_DIR="/opt/intel/openvino"
+export HDDL_INSTALL_DIR="/opt/intel/openvino/deployment_tools/inference_engine/external/hddl"
+export IE_PLUGINS_PATH="/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64"
