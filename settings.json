@@ -44,11 +44,20 @@
     "vim.statusBarColors.visualblock": "",
     "files.associations": {
     
+    
     },
 
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
         "--sytle=yapf.cfg"
     ],
+
+    "python.linting.pylintArgs": [
+        "--disable=W, C",
+        "--disable=import-error",
+        "--disable=no-name-in-module",
+        "--disable=undefined-variable",
+    ],
+    "python.linting.pylintCategorySeverity.warning": "Error",
 
 }
