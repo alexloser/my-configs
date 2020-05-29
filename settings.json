@@ -5,26 +5,10 @@
     "editor.minimap.enabled": true,
     "explorer.autoReveal": false,
     "workbench.activityBar.visible": true,
-    "vim.commandLineModeKeyBindings": [
-
-    
-    ],
     "workbench.editor.revealIfOpen": true,
     "workbench.colorTheme": "Base16 Atelier Lakeside",
     "workbench.preferredLightColorTheme": "Base16 Summerfruit Dark",
     "workbench.tree.renderIndentGuides": "always",
-    "vim.commandLineModeKeyBindingsNonRecursive": [
-
-    ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-x>": false,
-        "<C-c>": false,
-        "<C-w>": false,
-        "<C-h>": false,
-        "<C-i>": false
-    },
     "editor.fontFamily": "\"Fira Code Retina\"",
     "editor.fontWeight": "100",
     "editor.wordWrapColumn": 120,
@@ -35,29 +19,38 @@
     "markdown.preview.lineHeight": 1,
     "editor.lineHeight": 22,
     "editor.suggestLineHeight": 22,
+
+    "vim.commandLineModeKeyBindings": [],
     "vim.textwidth": 120,
-    "vim.visualModeKeyBindings": [
-    
-    ],
+    "vim.visualModeKeyBindings": [],
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-x>": false,
+        "<C-c>": false,
+        "<C-w>": false,
+        "<C-h>": false,
+        "<C-i>": false
+    },
+    "vim.statusBarColors.visualblock": "",
+
     "terminal.integrated.fontSize": 14.5,
     "terminal.integrated.lineHeight": 1.2,
-    "vim.statusBarColors.visualblock": "",
-    "files.associations": {
-    
-    
-    },
+    "files.associations": {},
 
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
         "--sytle=yapf.cfg"
     ],
-
     "python.linting.pylintArgs": [
         "--disable=W, C",
         "--disable=import-error",
         "--disable=no-name-in-module",
         "--disable=undefined-variable",
+        "--disable=c-extension-no-member",
     ],
     "python.linting.pylintCategorySeverity.warning": "Error",
 
+    "files.eol": "\n",
 }
