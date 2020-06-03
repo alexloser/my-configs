@@ -1,19 +1,17 @@
 {
-    "debug.console.fontSize": 17,
+    "debug.console.fontSize": 15,
     "workbench.preferredDarkColorTheme": "Base16 Materia",
     "workbench.preferredHighContrastColorTheme": "Base16 Solarized Dark",
     "editor.minimap.enabled": true,
     "explorer.autoReveal": false,
     "workbench.activityBar.visible": true,
     "workbench.editor.revealIfOpen": true,
-    "workbench.colorTheme": "Base16 Atelier Lakeside",
     "workbench.preferredLightColorTheme": "Base16 Summerfruit Dark",
     "workbench.tree.renderIndentGuides": "always",
     "editor.fontFamily": "\"Fira Code Retina\"",
     "editor.fontWeight": "100",
     "editor.wordWrapColumn": 120,
-    "editor.fontSize": 15,
-    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontFamily": "\"Fira Code Retina\"",
     "terminal.integrated.fontWeightBold": "normal",
     "debug.console.lineHeight": 22,
     "markdown.preview.lineHeight": 1,
@@ -34,10 +32,10 @@
         "<C-i>": false
     },
     "vim.statusBarColors.visualblock": "",
-
-    "terminal.integrated.fontSize": 14.5,
     "terminal.integrated.lineHeight": 1.2,
-    "files.associations": {},
+    "files.associations": {
+    
+    },
 
     "python.formatting.provider": "yapf",
     "python.formatting.yapfArgs": [
@@ -49,8 +47,12 @@
         "--disable=no-name-in-module",
         "--disable=undefined-variable",
         "--disable=c-extension-no-member",
+        "--disable=useless-object-inheritance"
     ],
     "python.linting.pylintCategorySeverity.warning": "Error",
 
     "files.eol": "\n",
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 13.5,
 }

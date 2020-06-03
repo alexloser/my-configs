@@ -466,7 +466,7 @@
 			"name": "this.self",
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "#FD971F"
+				"foreground": "#F0006C"
 			}
 		}
 	],
