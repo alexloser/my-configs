@@ -34,13 +34,8 @@
     "vim.statusBarColors.visualblock": "",
     "terminal.integrated.lineHeight": 1.2,
     "files.associations": {
-    
-    },
 
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfArgs": [
-        "--sytle=yapf.cfg"
-    ],
+    },
     "python.linting.pylintArgs": [
         "--disable=W, C",
         "--disable=import-error",
@@ -55,4 +50,7 @@
     "workbench.colorTheme": "Monokai",
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 13.5,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "python.formatting.provider": "yapf",
+    "editor.codeActionsOnSave": null,
 }
