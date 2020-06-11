@@ -34,7 +34,7 @@
     "vim.statusBarColors.visualblock": "",
     "terminal.integrated.lineHeight": 1.2,
     "files.associations": {
-
+    
     },
     "python.linting.pylintArgs": [
         "--disable=W, C",
@@ -42,8 +42,12 @@
         "--disable=no-name-in-module",
         "--disable=undefined-variable",
         "--disable=c-extension-no-member",
-        "--disable=useless-object-inheritance"
+        "--disable=useless-object-inheritance",
+        "--disable=too-few-public-methods",
+        "--disable=too-many-arguments",
+        "--disable=unresolved-import"
     ],
+
     "python.linting.pylintCategorySeverity.warning": "Error",
 
     "files.eol": "\n",
@@ -52,5 +56,21 @@
     "editor.fontSize": 13.5,
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "python.formatting.provider": "yapf",
-    "editor.codeActionsOnSave": null,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "python.jediMemoryLimit": 2048,
+    "editor.rulers": [
+    
+    ],
+    "editor.semanticTokenColorCustomizations": null,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--ignore-unresolved-import"
+    ],
+    "update.mode": "none",
+    "extensions.autoCheckUpdates": false
 }
