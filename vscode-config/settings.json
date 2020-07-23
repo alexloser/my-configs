@@ -8,7 +8,7 @@
     "workbench.editor.revealIfOpen": true,
     "workbench.preferredLightColorTheme": "Base16 Summerfruit Dark",
     "workbench.tree.renderIndentGuides": "always",
-    "editor.fontFamily": "\"Fira Code Retina\"",
+    "editor.fontFamily": "\"Consolas\"",
     "editor.fontWeight": "100",
     "editor.wordWrapColumn": 120,
     "terminal.integrated.fontFamily": "\"Fira Code Retina\"",
@@ -45,15 +45,14 @@
         "--disable=useless-object-inheritance",
         "--disable=too-few-public-methods",
         "--disable=too-many-arguments",
-        "--disable=unresolved-import"
+        "--disable=unresolved-import",
+        "--disable=literal-comparison"
     ],
 
     "python.linting.pylintCategorySeverity.warning": "Error",
 
     "files.eol": "\n",
-    "workbench.colorTheme": "Monokai",
     "terminal.integrated.fontSize": 12,
-    "editor.fontSize": 13.5,
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "python.formatting.provider": "yapf",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -69,8 +68,14 @@
         "--ignore-missing-imports",
         "--follow-imports=silent",
         "--show-column-numbers",
-        "--ignore-unresolved-import"
+        "--ignore-unresolved-import",
+        "--disable=literal-comparison"
     ],
     "update.mode": "none",
-    "extensions.autoCheckUpdates": false
+    "extensions.autoCheckUpdates": false,
+    "python.languageServer": "Microsoft",
+    "python.pythonPath": "C:\\Python36\\python.exe",
+    "workbench.colorTheme": "Monokai",
+    "editor.fontSize": 15,
+    "window.zoomLevel": 0
 }
