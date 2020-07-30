@@ -3,7 +3,7 @@
 //   #272822 (editor background)
 //   #414339 (selection)
 //   #75715e (focus)
-//   #EEEEEE (editor foreground)
+//   #DDDDDD (editor foreground)
 // Location: C:\Users\name\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\theme-monokai\themes
 {
 	"type": "dark",
@@ -17,10 +17,10 @@
 		"list.inactiveSelectionBackground": "#414339",
 		"list.hoverBackground": "#3e3d32",
 		"list.dropBackground": "#414339",
-		"list.highlightForeground": "#EEEEEE",
+		"list.highlightForeground": "#DDDDDD",
 		"button.background": "#75715E",
 		"editor.background": "#272822",
-		"editor.foreground": "#EEEEEE",
+		"editor.foreground": "#DDDDDD",
 		"selection.background": "#ccccc7",
 		"editor.selectionHighlightBackground": "#575b6180",
 		"editor.selectionBackground": "#878b9180",
@@ -41,9 +41,9 @@
 		"widget.shadow": "#000000",
 		"progressBar.background": "#75715E",
 		"badge.background": "#75715E",
-		"badge.foreground": "#EEEEEE",
+		"badge.foreground": "#DDDDDD",
 		"editorLineNumber.foreground": "#90908a",
-		"panelTitle.activeForeground": "#EEEEEE",
+		"panelTitle.activeForeground": "#DDDDDD",
 		"panelTitle.activeBorder": "#75715E",
 		"panelTitle.inactiveForeground": "#75715E",
 		"panel.border": "#414339",
@@ -53,7 +53,7 @@
 		"statusBar.debuggingBackground": "#75715E",
 		"statusBarItem.remoteBackground": "#AC6218",
 		"activityBar.background": "#272822",
-		"activityBar.foreground": "#EEEEEE",
+		"activityBar.foreground": "#DDDDDD",
 		"activityBar.dropBackground": "#414339",
 		"sideBar.background": "#1e1f1c",
 		"sideBarSectionHeader.background": "#272822",
@@ -100,12 +100,12 @@
 		"terminal.ansiBrightBlue": "#819aff", // hue shifted #AE81FF
 		"terminal.ansiBrightMagenta": "#AE81FF",
 		"terminal.ansiBrightCyan": "#66D9EF",
-		"terminal.ansiBrightWhite": "#EEEEEE"
+		"terminal.ansiBrightWhite": "#DDDDDD"
 	},
 	"tokenColors": [
 		{
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
@@ -114,7 +114,7 @@
 				"source.groovy.embedded"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
@@ -147,7 +147,7 @@
 				"meta.template.expression"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
@@ -176,7 +176,7 @@
 			"scope": "variable",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#EEEEEE"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
@@ -426,7 +426,7 @@
 			"name": "Markdown Punctuation Definition Link",
 			"scope": "markup.list.unnumbered.markdown, markup.list.numbered.markdown",
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
