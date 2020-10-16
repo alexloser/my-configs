@@ -1,6 +1,6 @@
 {
     "debug.console.fontSize": 15,
-    "workbench.preferredDarkColorTheme": "Base16 Materia",
+    "workbench.preferredDarkColorTheme": "Base16 Monokai",
     "workbench.preferredHighContrastColorTheme": "Base16 Solarized Dark",
     "editor.minimap.enabled": true,
     "explorer.autoReveal": false,
@@ -8,7 +8,7 @@
     "workbench.editor.revealIfOpen": true,
     "workbench.preferredLightColorTheme": "Base16 Summerfruit Dark",
     "workbench.tree.renderIndentGuides": "always",
-    "editor.fontFamily": "\"Consolas\"",
+    "editor.fontFamily": "\"Fira Code Retina\"",
     "editor.fontWeight": "100",
     "editor.wordWrapColumn": 120,
     "terminal.integrated.fontFamily": "\"Fira Code Retina\"",
@@ -32,9 +32,10 @@
         "<C-i>": false
     },
     "vim.statusBarColors.visualblock": "",
-    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.lineHeight": 1.3,
     "files.associations": {
-    
+        "*.spec" : "python",
+        "*.sh" : "bat"
     },
     "python.linting.pylintArgs": [
         "--disable=W, C",
@@ -63,7 +64,7 @@
     "editor.rulers": [
     
     ],
-    "editor.semanticTokenColorCustomizations": null,
+    // "editor.semanticTokenColorCustomizations": null,
     "python.linting.mypyArgs": [
         "--ignore-missing-imports",
         "--follow-imports=silent",
@@ -74,8 +75,27 @@
     "update.mode": "none",
     "extensions.autoCheckUpdates": false,
     "python.languageServer": "Microsoft",
-    "python.pythonPath": "C:\\Python36\\python.exe",
-    "workbench.colorTheme": "Monokai",
-    "editor.fontSize": 15,
-    "window.zoomLevel": 0
+    "python.pythonPath": "C:\\Python38\\python.exe",
+    "window.zoomLevel": 0,
+    "go.formatTool": "goimports",
+    "editor.fontSize": 13.5,
+    "terminal.integrated.copyOnSelection": true,
+    "extensions.ignoreRecommendations": true,
+
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: WebKit, IndentWidth: 4, BreakBeforeBraces: Linux}",
+    "debug.onTaskErrors": "showErrors",
+    
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "files.exclude": {
+        "*.metadata": true,
+        "*.settings": true,
+        "desktop.ini": true
+    },
+
+    "workbench.colorTheme": "Monokai Dimmed"
 }
+
